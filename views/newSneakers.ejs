@@ -1,0 +1,38 @@
+<%include header%>
+<link rel="stylesheet" href="/style.css">
+<form action="? " method = 'post'>
+  <input type="hidden" name="user_id" value="<%=user[0].id%>">
+  
+  <label for="brand">Brand</label>
+  <input type="text" name="brand" placeholder="brand">
+  
+  <label for="title">Model</label>
+  <input type="text" name="title" placeholder="model">
+  
+  <label for="year">Year</label>
+  <input type="integer" name = "year" placeholder="yyyy">
+  
+  <label for="condition">Condition</label>
+  <select name="condition">
+    <option value="5">5: brand new</option>
+    <option value="4">4: great condition</option>
+    <option value="3">3: good condition</option>
+    <option value="2">2: lightly worn</option>
+    <option value="1">1: worn</option>
+  
+  <label for="size">Size</label>
+  <input type="integer" name="size" placeholder="size">
+  
+  <label for="color">Color</label>
+  <input type="text" name="color" placeholder="color">
+  
+  <label for="cost">Acquisition cost</label>
+  <input type="intiger">
+
+    <label class="switch">
+        <input type="checkbox" name="public">
+        <span class="slider round"></span>
+      </label>
+
+
+</form>

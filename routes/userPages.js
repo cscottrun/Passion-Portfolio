@@ -3,6 +3,15 @@ const router = express.Router();
 const knex = require ('../knex')
 const path = require ('path')
 
+router.get('/users/:id/new', (req,res) => {
+  let id = req.params.id;
+  knex.select('id')
+  .from('users')
+  .where('id',id)
+  .then((user) => {
+    res.render('newSneakers', {user:user})
+  })
+})
 
 router.get('/users/:id', (req,res) => {
   let id = req.params.id;
@@ -14,9 +23,6 @@ router.get('/users/:id', (req,res) => {
   })
 })
 
-router.get('/user/:id/new', (req,res) => {
-  res.render('newProduct')
-})
 
 
 module.exports = router;
