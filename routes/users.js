@@ -40,14 +40,7 @@ router.get('/login', (req,res,next) => {
   res.render('login')
 })
 
-router.get('/:id', (req,res,next) => {
-  let id = req.params.id
-  knex('users')
-  .where('id', id)
-  .then((profile) => {
-    res.send ('welcome ' + profile[0].email.split('@')[0])
-  })
-})
+
 
 
 

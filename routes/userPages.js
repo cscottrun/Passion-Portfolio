@@ -3,16 +3,7 @@ const router = express.Router();
 const knex = require ('../knex')
 const path = require ('path')
 
-router.get('/users/:id/new', (req,res) => {
-  let id = req.params.id;
-  knex.select('id')
-  .from('users')
-  .where('id',id)
-  .then((user) => {
-    res.render('newSneakers', {user:user})
-  })
-})
-
+//user profile
 router.get('/users/:id', (req,res) => {
   let id = req.params.id;
   knex.select('username','id')
@@ -23,7 +14,8 @@ router.get('/users/:id', (req,res) => {
   })
 })
 
-router.get('/users/:id/edit', (req,res) => { 
+//user- edit user profile
+router.get('/users/edit/:id', (req,res) => { 
   knex('users')
   .where('id',req.params.id)
   .then((user) => {
@@ -31,7 +23,8 @@ router.get('/users/:id/edit', (req,res) => {
   })
 })
 
-router.get('/users/:id/items', (req, res) => {
+//user - see all items (may be included on user homepage)
+router.get('/users/items/:id', (req, res) => {
   knex('sneakers')
   .where('user_id', req.params.id)
   .then((items) => {
@@ -39,7 +32,19 @@ router.get('/users/:id/items', (req, res) => {
   })
 })
 
-router.post('/users/:id/new/submit', (req,res) => {
+//user- add a new item
+router.get('/users/new/:id', (req,res) => {
+  let id = req.params.id;
+  knex.select('id')
+  .from('users')
+  .where('id',id)
+  .then((user) => {
+    res.render('newSneakers', {user:user})
+  })
+})
+
+//this needs to become a redirect route for the post of a new item
+router.post('/users/new/submit/:id', (req,res) => {
 knex('sneakers')
 .insert({
   user_id:req.body.user_id,
