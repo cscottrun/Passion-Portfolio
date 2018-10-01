@@ -23,6 +23,35 @@ router.get('/users/:id', (req,res) => {
   })
 })
 
+router.get('/users/:id/items', (req, res) => {
+  knex('sneakers')
+  .where('user_id', req.params.id)
+  .then((items) => {
+    res.send(items)
+  })
+})
+
+router.post('/users/:id/new/submit', (req,res) => {
+knex('sneakers')
+.insert({
+  user_id:req.body.user_id,
+  brand: req.body.brand,
+  title:req.body.title,
+  year:req.body.year,
+  condition:req.body.condition,
+  size:req.body.size,
+  color:req.body.color,
+  public:req.body.public,
+  cost:req.body.cost,
+  image: req.body.image,
+  description:req.body.description
+}, '*')
+.then ( () => {
+res.redirect('???')
+})
+
+})
+
 
 
 module.exports = router;
