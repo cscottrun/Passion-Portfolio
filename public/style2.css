@@ -2,13 +2,16 @@ body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-2
 
 .form-heading { color:#fff; font-size:23px;}
 .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
-.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px;}
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px; font-weight: bold;}
+
 .login-form .form-control {
+  font-family: 'Courier New', Courier, monospace;
   background: #f7f7f7 none repeat scroll 0 0;
   border: 1px solid #d4d4d4;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 14px;
-  height: 50px;
+  height: 40px;
+  width: 60%;
   line-height: 50px;
 }
 .main-div {
@@ -16,7 +19,7 @@ body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-2
   border-radius: 2px;
   margin: 10px auto 30px;
   max-width: 38%;
-  padding: 50px 70px 70px 71px;
+  padding: 50px 70px 70px 70px;
 }
 
 .login-form .form-group {
@@ -25,19 +28,36 @@ body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-2
 .login-form{ text-align:center;}
 .forgot a {
   display: inline;
-  color: #777777;
-  font-size: 14px;
-  text-decoration: underline;
+  color:#f0ad4e;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 30px;
+  /* font-weight: bold; */
 }
-.login-form  .btn.btn-primary {
-  background: #f0ad4e none repeat scroll 0 0;
+.login-form  .btn.btn-primary , .login-form .btn.btn-secondary {
+  font-family: 'Courier New', Courier, monospace;
+  background: #f0ad4e;
   border-color: #f0ad4e;
   color: #ffffff;
   font-size: 14px;
   width: 100%;
-  height: 50px;
-  line-height: 50px;
-  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.login-form .btn.btn-secondary {
+  background-color: white;
+  color: #f0ad4e;
+}
+.login-form  .btn.btn-primary:hover {
+  background-color: #f1b55f;
+  
+}
+.login-form .btn.btn-secondary:hover{
+  background-color: #f7f7f7;
 }
 .forgot {
   display: inline;
