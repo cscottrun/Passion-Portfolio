@@ -29,7 +29,8 @@ exports.seed = function(knex, Promise) {
           "color": "earth",
           "public": "TRUE",
           "cost": 1230.5,
-          "description": "so cool"
+          "description": "so cool",
+          "sale_status": "for sale"
         },
         {
           "user_id": 1,
