@@ -21,6 +21,9 @@ app.use(users);
 let userPages = require ('./routes/userPages');
 app.use(userPages);
 
+let itemsPages = require('./routes/items');
+app.use(itemsPages);
+
 
 app.listen(PORT, () => {
   console.log('Welcome to the port of passions')

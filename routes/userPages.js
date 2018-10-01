@@ -23,6 +23,14 @@ router.get('/users/:id', (req,res) => {
   })
 })
 
+router.get('/users/:id/edit', (req,res) => { 
+  knex('users')
+  .where('id',req.params.id)
+  .then((user) => {
+    res.send(user)
+  })
+})
+
 router.get('/users/:id/items', (req, res) => {
   knex('sneakers')
   .where('user_id', req.params.id)
