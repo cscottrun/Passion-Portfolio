@@ -1,8 +1,14 @@
+/* Set font family */
+h1, h2, h3, h4, h5, p, a {
+  font-family: 'Courier New', Courier, monospace
+}
+
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 15px 10px;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 2px;
 }
 
 /* Style the header links */
@@ -25,15 +31,16 @@
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  background-color: #ddd;
+  background-color: #f1b55f;
   color: black;
+  border-radius: 10px;
 }
 
 /* Style the active/current link*/
-.header a.active {
-  background-color: firebrick;
+/* .header a.active {
+  background-color: #f1b55f;
   color: white;
-}
+} */
 
 /* Float the link section to the right */
 .header-right {
