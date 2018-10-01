@@ -16,7 +16,9 @@ exports.seed = function(knex, Promise) {
           "color": "red",
           "public": "TRUE",
           "cost": 500,
-          "description": "beautiful"
+          "description": "beautiful",
+          "sale_status": "for sale"
+
         },
         {
           "user_id": 2,
@@ -43,7 +45,9 @@ exports.seed = function(knex, Promise) {
           "color": "multi",
           "public": "TRUE",
           "cost": 499,
-          "description": "the most hip"
+          "description": "the most hip",
+          "sale_status": "for sale"
+
         }
       ]);
     });

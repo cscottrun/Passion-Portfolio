@@ -13,7 +13,8 @@ router.get('/marketplace', (req,res) => {
   knex('sneakers')
   .where('sale_status', 'for sale')
   .then((sneakers) => {
-    res.send(sneakers)
+    //res.send(sneakers)
+    res.render('marketplace', {sneakers:sneakers})
   })
 })
 

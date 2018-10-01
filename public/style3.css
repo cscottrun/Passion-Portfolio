@@ -1,0 +1,63 @@
+
+.marketitems{
+  display: flex;
+  flex-wrap: wrap;
+  display: block;
+  width: 100%;
+  background: aqua;
+}
+.item{
+  background-color: pink;
+  /* float: left; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 200px;
+  margin: 20px;
+  margin-left: 20%;
+  border: dashed;
+}
+
+.image {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+}  
+
+.content {
+  background: yellow;
+  margin: 1%;
+  font-size: 14px;
+}
+.header {
+  background-color: purple;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+}
+.sub{
+  display: inline;
+}
+.price{
+  float: right;
+}
+
+
+.metadata {
+  display: block;
+  list-style: none;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  margin-top: 0.6em;
+  max-width: auto;
+  font-size: 1em;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
+}

@@ -1,0 +1,31 @@
+<%include header%>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3.css">
+
+<div class="marketitems">
+  
+  <% sneakers.forEach( (sneaker) => { %>
+
+    <div class="item">
+
+      <div class="image">
+        <img src="<%=sneaker.imagec%>">
+      </div>
+
+      <div class="content">
+        <div class="header"><%=sneaker.title%></div>
+        
+        <div class='sub'>
+          <h3 class="price">$<%=sneaker.cost%></h3>
+          <h3 class='brand'>by <%=sneaker.brand%></h3>
+        </div>
+        
+        
+      </div>
+
+    </div>
+  
+  <% }) %>
+
+  </div>
+
