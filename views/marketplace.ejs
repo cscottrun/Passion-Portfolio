@@ -1,40 +1,50 @@
 <%include header%>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="style3.css">
+<link rel="stylesheet" href="/styleItemsList.css">
+<link rel="stylesheet" href="/styleIcons.css">
+
+<h1 class= 'subheader'>the Market</h1>
+
 
 <div class="marketitems">
   
   <% sneakers.forEach( (sneaker) => { %>
-
+    <a class='itemlink' href="/items/<%=sneaker.id%>">
     <div class="item">
 
       <div class="image">
-        <img src="<%=sneaker.imagec%>">
+        <img src="<%=sneaker.image%>">
       </div>
 
       <div class="content">
-        <div class="header"><%=sneaker.title%></div>
+        <div class="title"><%=sneaker.title%></div>
         
         <div class='sub'>
           <h3 class="price">$<%=sneaker.cost%></h3>
           <h3 class='brand'>by <%=sneaker.brand%></h3>
         </div>
+        
         <div>
           <p><%=sneaker.description%></p>
         </div>
 
-
-        <form action="/test">
-          <label class="switch">
-            <input type="checkbox" name="public" >
-            <span class="slider round"></span>
-          </label>
-        </form>
-        
+        <% if (sneaker.sale_status === 'for sale') { %>
+          <div>
+            <span class="forSale">for sale</span>
+          </div>
+        <%  } else { %>
+          <div>
+            <a href="">
+              <span class="putOnSale">sell</span>
+            </a>
+          </div>
+          
+        <% } %>
+          
       </div>
 
     </div>
-  
+  </a>
   <% }) %>
 
   </div>

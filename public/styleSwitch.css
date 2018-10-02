@@ -1,13 +1,7 @@
-.newSneakers{
-  background-color: palegoldenrod;
-}
-.newSneakers input, .newSneakers label{
-  display: block;
-}
 
+/* Style for Public Switch button*/
 body {
-  color: #404040;
-  font-family: 'Lucida Grande', Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
@@ -31,24 +25,19 @@ body {
   width: 58px;
   line-height: 26px;
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.35);
+  color: grey;
   text-align: center;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
   cursor: pointer;
 }
 .switch-label:active {
   font-weight: bold;
 }
-
 .switch-label-off {
   padding-left: 2px;
 }
-
 .switch-label-on {
   padding-right: 2px;
 }
-
-
 .switch-input {
   display: none;
 }
@@ -99,11 +88,11 @@ body {
   transition: left 0.15s ease-out;
 }
 .switch-blue .switch-selection {
-  background-color: #3aa2d0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fc9ee), color-stop(100%, #3aa2d0));
-  background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: -ms-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
-  background-image: linear-gradient(top, #4fc9ee, #3aa2d0);
+  background-color: #f0ad4e;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9900), color-stop(100%, #f0ad4e));
+  background-image: -webkit-linear-gradient(top, #ff9900, #f0ad4e);
+  background-image: -moz-linear-gradient(top, #ff9900, #f0ad4e);
+  background-image: -ms-linear-gradient(top, #ff9900, #f0ad4e);
+  background-image: -o-linear-gradient(top, #ff9900, #f0ad4e);
+  background-image: linear-gradient(top, #ff9900, #f0ad4e);
 }
