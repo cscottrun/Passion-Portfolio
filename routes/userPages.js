@@ -44,7 +44,7 @@ router.get('/users/new/:id', (req,res) => {
 })
 
 //this needs to become a redirect route for the post of a new item
-router.post('/users/new/submit/:id', (req,res) => {
+router.post('/users/new/submit', (req,res) => {
 knex('sneakers')
 .insert({
   user_id:req.body.user_id,
@@ -59,8 +59,8 @@ knex('sneakers')
   image: req.body.image,
   description:req.body.description
 }, '*')
-.then ( () => {
-res.redirect('???')
+.then ( (item) => {
+res.send(item)
 })
 
 })

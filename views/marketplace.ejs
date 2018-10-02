@@ -19,7 +19,17 @@
           <h3 class="price">$<%=sneaker.cost%></h3>
           <h3 class='brand'>by <%=sneaker.brand%></h3>
         </div>
-        
+        <div>
+          <p><%=sneaker.description%></p>
+        </div>
+
+
+        <form action="/test">
+          <label class="switch">
+            <input type="checkbox" name="public" >
+            <span class="slider round"></span>
+          </label>
+        </form>
         
       </div>
 

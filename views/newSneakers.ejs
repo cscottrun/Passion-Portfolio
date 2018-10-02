@@ -1,8 +1,9 @@
 <%include header%>
 <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style3.css">
+<link rel="stylesheet" href="/styleForms.css">
 
-<link rel="stylesheet" href="/style.css">
-<form class="newSneakers" action="/users/:id/new/submit" method = 'post'>
+<form class="newSneakers" action="/users/new/submit" method = 'post'>
   <input type="hidden" name="user_id" value="<%=user[0].id%>">
   
   <label for="brand">Brand</label>
@@ -13,34 +14,41 @@
   
   <label for="year">Year</label>
   <input type="integer" name = "year" placeholder="yyyy">
+ 
+  <label for="size">Size</label>
+  <input type="integer" name="size" placeholder="size">
   
-  <label for="condition">Condition</label>
+  
+  <label for="color">Color</label>
+  <input type="text" name="color" placeholder="color">
+  
+  <label for="cost">Acquisition cost</label>
+  <input type="intiger" name="cost" placehoder="acquisition cost">
+  
+  <label for="image">Image</label>
+  <input type="text" name = "image" placeholder="image url">
+  
+  <label for="description">Description</label>
+  <input type="text" name="description" placeholder="describe your kicks">
+  
+  
+  <div class="switch switch-blue">
+    <input type="radio" class="switch-input" name="public" value="true" id="week2" checked>
+    <label for="week2" class="switch-label switch-label-off">PUBLIC</label>
+    <input type="radio" class="switch-input" name="public" value="false" id="month2">
+    <label for="month2" class="switch-label switch-label-on">PRIVATE</label>
+    <span class="switch-selection"></span>
+  </div>
+  
+  
+  <!-- <label for="condition">Condition</label>
   <select name="condition">
     <option value="5">5: brand new</option>
     <option value="4">4: great condition</option>
     <option value="3">3: good condition</option>
     <option value="2">2: lightly worn</option>
-    <option value="1">1: worn</option>
-  
-  <label for="size">Size</label>
-  <input type="integer" name="size" placeholder="size">
-  
-  <label for="color">Color</label>
-  <input type="text" name="color" placeholder="color">
-  
-  <label class="switch">
-    <input type="checkbox" name="public">
-    <span class="slider round"></span>
-  </label>
-  
-  <label for="cost">Acquisition cost</label>
-  <input type="intiger" name="cost" placehoder="acquisition cost">
-
-  <label for="image">Image</label>
-  <input type="text" name = "image" placeholder="image url">
-
-  <label for="description">Description</label>
-  <input type="text" name="description" placeholder="describe your kicks">
-
+    <option value="1">1: worn</option> -->
+    
+    
   <button type="submit">Submit</button>
 </form>
