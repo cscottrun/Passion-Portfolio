@@ -1,51 +1,91 @@
 /* style for user page*/
 
 body{
-  display: inline;
+  background: grey;
+  display: grid;
+  grid-template-columns: 180px 80%;
+  grid-template-rows: 80px 500px 100%;
+  height: 100%;
+  width:100%;
+  
+}
+.header{
+  background: lightgrey;
+  grid-area: 1 / 1 / 2 / 8;
 }
 
 /* Side Bar */
 .sidebar{
+  /*as a container*/
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 180px 20px 90px 90px 90px 90px 100%;  
+/* as an object */
+  grid-area: 2 /1 /-1;
   background: palevioletred;
-  height: 100%;
-  width: 150px;
-  padding: 10px;
+  /* padding: 10px; */
+  /* height: 100%;
+  width: 150px; */
 }
 .avatar-container{
   background: yellow;
-  min-width: 100%;
-  height: 150px;
+  grid-area: 1/1;
+  margin: 10px;
   border-radius: 50%;
-  
 }
-.avatar-inner{
-  background: white;
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  padding: 5%;
+.user-menu{
+  background: lightseagreen;
+  grid-area: 3 / 1
+}
+.user-menu a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  list-style-type:none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  background: darkgrey;
+}
+.user-menu a:hover{
+  background: lightgrey;
+  /* color: black; */
 }
 .pic {
   height: 100%;
   width: 100%;
   border-radius: 50%;
 }
-.side-menu{
-  list-style-type: none;
+.container{
+  height: 500px;
+  background: paleturquoise;
+  grid-area: 2 / 2;
+  display: grid;
+  grid-template-rows: 80px 80%;
+  grid-template-columns: 70px 80% 10px ;
+
 }
-.side-menu ul{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 10px;
-  padding: 0;
-  float: left;
-  font-size: 14px;
+.graph-container, .items-container{
+  grid-area: 2/2/4/3;
+  background: lightgrey;  
 }
-.main-graph{
-  position: relative;
-  float: right;
-  margin-right: 200px;
-  padding: 0;
-  background: purple;
-  width: 30%;
-  height: 30%;
+.graph{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-two{
+  /* height: 500px; */
+  background: pink;
+  grid-area: 3 / 2;
+  display: grid;
+  grid-template-rows: 80px 80%;
+  grid-template-columns: 70px 80% 10px ;
+}
+
+.container h1, .container-two h1 {
+  text-align: center;
+  grid-area: 1/2/2/3;
+  padding-top: 10px;
 }
