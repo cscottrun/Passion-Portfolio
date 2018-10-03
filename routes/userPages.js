@@ -10,7 +10,8 @@ router.get('/users/:id', (req,res) => {
   .from ('users')
   .where('id', id)
   .then((user) => {
-    res.send(user)
+    //res.send(user)
+    res.render('userProfile')
   })
 })
 
