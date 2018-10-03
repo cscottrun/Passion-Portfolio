@@ -1,0 +1,74 @@
+.subheader{
+  text-align: center;
+}
+.marketitems{
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  display: block;
+  width: 100%;
+  /* background: aqua; */
+}
+.item{
+  /* background-color: pink; */
+  /* float: left; */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 180px;
+  margin: 20px;
+  margin-left: 20%;
+  border-bottom: dotted;
+  border-color: lightgrey
+}
+.image img{
+  /* background-color: green; */
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+} 
+.content {
+  /* background: yellow; */
+  padding-left: 30px;
+  height: 50%;
+  width: 70%;
+  margin: 1%;
+  font-size: 14px;
+}
+.title {
+  /* background-color: purple; */
+  padding-top: 20px;
+  display: block;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+.sub{
+  display: inline;
+}
+.price{
+  float: right;
+}
+
+.metadata {  
+  display: block;
+  list-style: none;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.description { 
+  margin-top: 0.6em;
+  max-width: auto;
+  font-size: 1em;
+  line-height: 1.4285em;
+  color: black;
+}
+
+.itemlink {
+  text-decoration: none;
+}

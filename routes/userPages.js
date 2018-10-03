@@ -6,11 +6,11 @@ const path = require ('path')
 //user profile
 router.get('/users/:id', (req,res) => {
   let id = req.params.id;
-  knex.select('username','id')
+  knex.select('username','id','avatar')
   .from ('users')
   .where('id', id)
   .then((user) => {
-    res.send(user[0])
+    res.send(user)
   })
 })
 
@@ -44,7 +44,7 @@ router.get('/users/new/:id', (req,res) => {
 })
 
 //this needs to become a redirect route for the post of a new item
-router.post('/users/new/submit/:id', (req,res) => {
+router.post('/users/new/submit', (req,res) => {
 knex('sneakers')
 .insert({
   user_id:req.body.user_id,
@@ -59,8 +59,8 @@ knex('sneakers')
   image: req.body.image,
   description:req.body.description
 }, '*')
-.then ( () => {
-res.redirect('???')
+.then ( (item) => {
+res.send(item)
 })
 
 })
