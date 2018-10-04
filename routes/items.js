@@ -9,9 +9,9 @@ const path = require ('path')
 router.get('/items/:id', (req,res) => {
   knex('sneakers')
   .where('id',req.params.id)
-  .then((sneakers) => {
-    //res.send(sneakers)
-    res.render('itemProfile')
+  .then((sneaker) => {
+    //res.send(sneaker)
+    res.render('itemProfile', {sneaker:sneaker})
   })
 })
 

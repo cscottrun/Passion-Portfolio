@@ -33,6 +33,15 @@ router.post('/users', (req, res, next) => {
     });
 });
 
+//fake the login process
+router.get('/test', (req,res,next) => {
+  email = req.body.email
+  res.send(email)
+  knex('users')
+  .where('email', email)
+  .then( (user))
+})
+
 //get all users
 router.get('/users', (req,res,next)  => {
   knex.select('username', 'id')

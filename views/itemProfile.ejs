@@ -6,26 +6,31 @@
   <%include userHeader%>
   <div class="item-container">
     <div class="item-box">
-      <img class = "image" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTzvPqRKaGSwdaXAxHNgyZ2dKVPN81f6Yak4tUHWP57qHFRCoPwacV4i26T1ijMXipEs5rk7-EXYVj5oTCIkLebYzXXzdJq&usqp=CAE" alt="">
+      <img class = "image" src="<%=sneaker[0].image%>" alt="">
       <div class="text-box">
         <div class="text-box-header">
-          <h1>Air Jordans</h1>
-          <h2>By Nike</h2>
+          <h1><%=sneaker[0].title%></h1>
+          <h2>by <%=sneaker[0].brand%></h2>
         </div>
         <div class="text-box-left">
-          <p>year: 1998</p>
-          <p>condition: super</p>
-          <p>public</p>
+          <p>year: <%=sneaker[0].year%></p>
+          <p>condition: <%=sneaker[0].condition%></p>
+          <p><%=sneaker[0].public ? "public" : "private"%></p>
 
         </div>
         <div class="text-box-right">
-          <p>size: 10</p>
-          <p>color: green</p>
-          <p>on-sale</p>
+          <p>size: <%=sneaker[0].size%></p>
+          <p>color: <%=sneaker[0].color%></p>
+          <p><%=sneaker[0].sale_status === "on-sale" ? "for sale" : "not for sale"%></p>
 
         </div>
         <div class="description">
-          <p>High-top sneaker with grip-tape ankle strap and dollar bill print Leather upper Round toe Adjustable grip-tape strap Leather lining Rubber sole Padded insole Made in Italy. Maison Margiela</p>
+          <p><%=sneaker[0].description%></p>
+        </div>
+        <div class="edit">
+          <a href="">
+            <p class="no-link">edit detials</p>
+          </a>
         </div>
        
 
