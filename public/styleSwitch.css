@@ -1,12 +1,12 @@
 
 /* Style for Public Switch button*/
-body {
+/* body {
   font-family: 'Courier New', Courier, monospace;
   font-size: 13px;
   font-weight: normal;
   line-height: 20px;
   background: #3b3f46;
-}
+} */
 .switch {
   position: relative;
   height: 26px;

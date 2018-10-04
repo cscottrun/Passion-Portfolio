@@ -1,18 +1,5 @@
 /* style for user page*/
 
-body{
-  background: grey;
-  display: grid;
-  grid-template-columns: 180px 80%;
-  grid-template-rows: 80px 500px 100%;
-  height: 100%;
-  width:100%;
-  
-}
-.header{
-  background: lightgrey;
-  grid-area: 1 / 1 / 2 / 8;
-}
 
 /* Side Bar */
 .sidebar{
