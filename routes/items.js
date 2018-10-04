@@ -10,7 +10,8 @@ router.get('/items/:id', (req,res) => {
   knex('sneakers')
   .where('id',req.params.id)
   .then((sneakers) => {
-    res.send(sneakers)
+    //res.send(sneakers)
+    res.render('itemProfile')
   })
 })
 
