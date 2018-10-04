@@ -1,0 +1,65 @@
+.item-container {
+background: whitesmoke;
+grid-area: 2/2/4;
+display: grid;
+grid-template-rows: 80px 80px 400px 100%;
+grid-template-columns: 10% 40% 40% 10%;
+}
+.item-box {
+  background: white;
+  grid-area: 2/2/4/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.image{
+  grid-area: 1/1;
+  height: 100%;
+  width: auto;
+}
+.text-box{
+  background: white;
+  grid-area: 1/2;
+  display: grid;
+  grid-template-rows: 30% 30% 32% 8%;
+  grid-template-columns: 50% 50%;
+}
+
+.text-box-header{
+  grid-area: 1/1/2/3;
+}
+.text-box-header h1, .text-box-header h2{
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  grid-area: 1/1/2/3;
+ color: #707070;
+ text-align: center;
+ margin: 10px;
+}
+.text-box-left{
+  display: block;
+  grid-area: 2/1;
+}
+.text-box-right{
+  display: block;
+  grid-area: 2/2;
+
+}
+.description{
+  grid-area: 3/1/4/3;
+}
+p{
+  color: #707070;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin-left: 15px;
+  text-decoration: none;
+}
+.edit{
+  grid-area: 4/1/5/3;
+}
+.no-link {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}

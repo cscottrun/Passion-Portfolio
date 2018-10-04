@@ -16,12 +16,29 @@ router.get('/users/:id', (req,res) => {
   })
 })
 
+//edit profile post/patch
+router.post('/users/:id', (req,res) => {
+  console.log(res.body)
+  knex('users')
+  .where('id', req.body.id)
+  .update({
+    email: req.body.email,
+    username: req.body.username,
+    avatar: req.body.avatar
+  },'*')
+  .then(() => {
+    //res.send(user)
+    res.redirect('/users/2')
+  })  
+  
+})
+
 //user- edit user profile
 router.get('/users/edit/:id', (req,res) => { 
   knex('users')
   .where('id',req.params.id)
   .then((user) => {
-    res.send(user)
+    res.render('userEdit', {user:user})
   })
 })
 
@@ -62,7 +79,7 @@ knex('sneakers')
   description:req.body.description
 }, '*')
 .then ( (item) => {
-res.send(item)
+res.redirect('users/req.body.user_id')
 })
 
 })

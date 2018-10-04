@@ -47,7 +47,7 @@ p { margin-bottom: 2px;}
 .login-form{ text-align:center;}
 .forgot a {
   display: inline;
-  color:#f0ad4e;
+  color:mistyrose;
   font-size: 16px;
   text-decoration: none;
   margin: 30px;
@@ -55,9 +55,9 @@ p { margin-bottom: 2px;}
 }
 .login-form  .btn.btn-primary , .login-form .btn.btn-secondary {
   font-family: 'Courier New', Courier, monospace;
-  background: #f0ad4e;
-  border-color: #f0ad4e;
-  color: #ffffff;
+  background: mistyrose;
+  border-color: mistyrose;
+  color: #white;
   font-size: 14px;
   width: 100%;
   height: 40px;
@@ -67,15 +67,15 @@ p { margin-bottom: 2px;}
   margin: 10px;
   cursor: pointer;
 }
-.login-form .btn.btn-secondary {
+.login-form .btn.btn-primary {
   background-color: white;
-  color: #f0ad4e;
+  color: #707070;
 }
-.login-form  .btn.btn-primary:hover {
-  background-color: #f1b55f;
+.login-form  .btn.btn-secondary:hover {
+  background-color: #ffd1cc;
   
 }
-.login-form .btn.btn-secondary:hover{
+.login-form .btn.btn-primary:hover{
   background-color: #f7f7f7;
 }
 .forgot {
@@ -84,7 +84,7 @@ p { margin-bottom: 2px;}
 }
 
 .login-form .btn.btn-primary.reset {
-  background: #ff9900 none repeat scroll 0 0;
+  background: mistyrose none repeat scroll 0 0;
 }
 .back { text-align: left; margin-top:10px;}
 .back a {color: #444444; font-size: 13px;text-decoration: none;}

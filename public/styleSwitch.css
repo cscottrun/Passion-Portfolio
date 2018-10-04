@@ -88,11 +88,11 @@
   transition: left 0.15s ease-out;
 }
 .switch-blue .switch-selection {
-  background-color: #f0ad4e;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9900), color-stop(100%, #f0ad4e));
-  background-image: -webkit-linear-gradient(top, #ff9900, #f0ad4e);
-  background-image: -moz-linear-gradient(top, #ff9900, #f0ad4e);
-  background-image: -ms-linear-gradient(top, #ff9900, #f0ad4e);
-  background-image: -o-linear-gradient(top, #ff9900, #f0ad4e);
-  background-image: linear-gradient(top, #ff9900, #f0ad4e);
+  background-color: mistyrose;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, mistyrose), color-stop(100%, ffd1cc));
+  background-image: -webkit-linear-gradient(top, mistyrose, #ffd1cc);
+  background-image: -moz-linear-gradient(top, mistyrose, #ffd1cc);
+  background-image: -ms-linear-gradient(top, mistyrose, #ffd1cc);
+  background-image: -o-linear-gradient(top, mistyrose, #ffd1cc);
+  background-image: linear-gradient(top, mistyrose, #ffd1cc);
 }
