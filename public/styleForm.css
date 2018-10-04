@@ -1,25 +1,23 @@
 /* style for forms */
+#background{ 
+  background-image:url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); 
+  /* background-repeat: ;  */
+  background-position:center; 
+  background-size:cover; 
+  padding:0;
+}
 #shoes-background{ 
   background-image:url("./images/shoes2-background.jpeg"); 
   background-repeat:repeat ; 
   background-position:center; 
-  background-size: auto; 
+  background-size:auto; 
   padding:0;
 }
 
-p{
-  padding-bottom: 0;
-  margin-bottom: 2px;
-}
 .form-heading { color:#fff; font-size:23px;}
 .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
-.panel p { 
-  color:#777777; 
-  font-size:14px; 
-  margin-bottom:10px; 
-  line-height:24px; 
-  font-weight: bold;}
-
+.panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px; font-weight: bold;}
+p { margin-bottom: 2px;}
 .container{
   grid-area: 2/2;
 }
@@ -27,7 +25,6 @@ p{
   grid-area: 2/2;
   font-family: 'Courier New', Courier, monospace;
   background: #f7f7f7 none repeat scroll 0 0;
-  opacity: 1;
   border: 1px solid #d4d4d4;
   border-radius: 10px;
   font-size: 14px;
@@ -36,22 +33,17 @@ p{
   line-height: 50px;
 }
 .main-div {
-  background: white none repeat scroll 0 0;
-  opacity: .95;
+  background: #ffffff none repeat scroll 0 0;
+  opacity: .96;
   border-radius: 2px;
   margin: 10px auto 30px;
   max-width: 38%;
   padding: 50px 70px 70px 70px;
 }
 
-
 .login-form .form-group {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom:10px;
 }
-.
 .login-form{ text-align:center;}
 .forgot a {
   display: inline;
