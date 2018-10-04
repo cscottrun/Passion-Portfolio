@@ -1,11 +1,28 @@
 /* style for forms */
-body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;}
+#background{ 
+  background-image:url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); 
+  /* background-repeat: ;  */
+  background-position:center; 
+  background-size:cover; 
+  padding:0;
+}
+#shoes-background{ 
+  background-image:url("./images/shoes2-background.jpeg"); 
+  background-repeat:repeat ; 
+  background-position:center; 
+  background-size:auto; 
+  padding:0;
+}
 
 .form-heading { color:#fff; font-size:23px;}
 .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}
 .panel p { color:#777777; font-size:14px; margin-bottom:30px; line-height:24px; font-weight: bold;}
-
+p { margin-bottom: 2px;}
+.container{
+  grid-area: 2/2;
+}
 .login-form .form-control {
+  grid-area: 2/2;
   font-family: 'Courier New', Courier, monospace;
   background: #f7f7f7 none repeat scroll 0 0;
   border: 1px solid #d4d4d4;
@@ -17,6 +34,7 @@ body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-2
 }
 .main-div {
   background: #ffffff none repeat scroll 0 0;
+  opacity: .96;
   border-radius: 2px;
   margin: 10px auto 30px;
   max-width: 38%;
