@@ -1,0 +1,20 @@
+.body-two{
+  background-image:url( "https://st.depositphotos.com/1007712/3212/v/950/depositphotos_32126511-stock-illustration-grunge-background-with-sneakers.jpg");
+  grid-area: 2/1/-1/5;
+  opacity: .5;
+}
+
+.title{
+  position: absolute;;
+  opacity: auto;
+  display: inline-block;
+  margin-left: 44%;
+  margin-top: 70px;
+}
+h1{
+  margin: 0px;
+  font-size: 80px;
+}
+h2{
+  font-size: 25px;
+}

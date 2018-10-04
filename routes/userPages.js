@@ -5,12 +5,13 @@ const path = require ('path')
 
 //user profile
 router.get('/users/:id', (req,res) => {
-  let id = req.params.id;
-  knex.select('username','id','avatar')
-  .from ('users')
-  .where('id', id)
+  let user_id = req.params.id;
+  knex.select('*')
+  .from ('sneakers')
+  .leftJoin('users','user_id','users.id')
+  .where('user_id', user_id)
   .then((userSneakers) => {
-    //res.send(user)
+    //res.send(userSneakers)
     res.render('userProfile', {userSneakers:userSneakers})
   })
 })

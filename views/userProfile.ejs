@@ -9,7 +9,7 @@
   <aside class="sidebar">
 
     <div class="avatar-container">
-        <img class="pic" src="/images/Carrie.jpg" alt="profile pic">
+        <img class="pic" src="<%=userSneakers[0].avatar%>" alt="profile pic">
     </div>
 
     <div class="user-menu">
@@ -36,7 +36,7 @@
         <% userSneakers.forEach((sneaker) => { %> 
         <a href="/items/<%=sneaker.id%>" class="item">
             <div class="image">
-                <img src="<%=sneaker.image%>">
+                <img id="shoe" src="<%=sneaker.image%>">
             </div>
 
             <div class="content">
@@ -48,7 +48,7 @@
               <div class="description"><p>
                   <%=sneaker.description%>
               </p></div>
-              <% if (sneaker.sale_status === 'for sale') { %>
+              <% if (sneaker.sale_status === 'on-sale') { %>
               <div class="sale-status">
                 <h6>for sale</h6>
               </div>
