@@ -9,9 +9,9 @@ router.get('/users/:id', (req,res) => {
   knex.select('username','id','avatar')
   .from ('users')
   .where('id', id)
-  .then((user) => {
+  .then((userSneakers) => {
     //res.send(user)
-    res.render('userProfile')
+    res.render('userProfile', {userSneakers:userSneakers})
   })
 })
 
