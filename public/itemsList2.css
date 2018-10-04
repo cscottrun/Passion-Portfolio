@@ -1,0 +1,83 @@
+
+h1, h2, h3, h4, h5, h6, p {
+  color: black;
+}
+.item{
+  /* border-left:dotted; */
+  border-bottom:dotted;
+  border-color: lightgrey;
+  height: 200px;
+  width: 100%;
+  text-decoration: none;
+  display:grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+.image{
+  /* border:dashed; */
+  grid-area: 1/1;
+  height:200px;
+  width: 200px;
+  margin: auto;
+  border-radius: 10%;
+}
+#shoe{
+  height: 180px;
+  width: 180px;
+}
+.content{
+  /* background: paleturquoise; */
+  grid-area: 1/2/2/4;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.title{
+  /* border:dashed; */
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.sub{
+  /* background:grey; */
+  display: inline;
+  font-size: 14px;
+}
+h3 , p{
+  font-family: 'Courier New', Courier, monospace;
+}
+.brand{
+  float: left;
+  padding-left: 10px;
+}
+.year{
+  float: right;
+  padding-right: 10px;
+}
+.description{
+  /* background: ghostwhite; */
+  grid-area: 3/1/5/2;
+  margin-right: 90px;
+}
+.sale-status, .sale-price{
+  background: mistyrose;
+  grid-area: 4/1/5/2;
+  width: 70px;
+  height: 40px;
+  margin-left: 87%;
+  padding:0;
+  border-radius: 50%;
+}
+
+h6{
+  display: block;
+  line-height: 40px;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+}
+

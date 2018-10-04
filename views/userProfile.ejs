@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="/styleHeader.css">
 <link rel="stylesheet" href="/styleUser.css">
+<link rel="stylesheet" href="/itemsList2.css">
+
 
 <body>
   <%include userHeader%>
@@ -7,7 +9,7 @@
   <aside class="sidebar">
 
     <div class="avatar-container">
-        <img class="pic" src="/images/Carrie.jpg" alt="profile pic">
+        <img class="pic" src="<%=userSneakers[0].avatar%>" alt="profile pic">
     </div>
 
     <div class="user-menu">
@@ -27,14 +29,42 @@
       </div> 
   </div>
 
+  <!-- PORTFOLIO ITEMS -->
   <div class="container-two">
       <h1>Your Portfolio Items</h1>
       <div class="items-container">
+        <% userSneakers.forEach((sneaker) => { %> 
+        <a href="/items/<%=sneaker.id%>" class="item">
+            <div class="image">
+                <img id="shoe" src="<%=sneaker.image%>">
+            </div>
 
+            <div class="content">
+              <div class="title"><%=sneaker.title%></div>
+              <div class="sub">
+                <h3 class="brand">By <%=sneaker.brand%></h3>
+                <h3 class="year"><%=sneaker.year%></h3>
+              </div>
+              <div class="description"><p>
+                  <%=sneaker.description%>
+              </p></div>
+              <% if (sneaker.sale_status === 'on-sale') { %>
+              <div class="sale-status">
+                <h6>for sale</h6>
+              </div>
+              <% } %>
+            </div>
+
+        </a>
+
+
+      <% }) %>
       </div>
-
-  
   </div>
    
+
+
+
+
 
 </body>

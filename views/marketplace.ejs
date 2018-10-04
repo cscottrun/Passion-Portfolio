@@ -1,51 +1,40 @@
-<%include header%>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="/styleItemsList.css">
-<link rel="stylesheet" href="/styleIcons.css">
+<link rel="stylesheet" href="/styleHeader.css">
+<link rel="stylesheet" href="/styleUser.css">
+<link rel="stylesheet" href="/itemsList2.css">
 
-<h1 class= 'subheader'>the Market</h1>
-
-
-<div class="marketitems">
+<body>
+    <%include header%>
+    
+    <div class="container">
+        <h1>Passion Portfolio Marketplace</h1>
+        <div class="items-container">
+          <% sneakers.forEach((sneaker) => { %> 
+          <a href="/items/<%=sneaker.id%>" class="item">
+              <div class="image">
+                  <img id="shoe" src="<%=sneaker.image%>">
+              </div>
   
-  <% sneakers.forEach( (sneaker) => { %>
-    <a class='itemlink' href="/items/<%=sneaker.id%>">
-    <div class="item">
-
-      <div class="image">
-        <img src="<%=sneaker.image%>">
-      </div>
-
-      <div class="content">
-        <div class="title"><%=sneaker.title%></div>
-        
-        <div class='sub'>
-          <h3 class="price">$<%=sneaker.cost%></h3>
-          <h3 class='brand'>by <%=sneaker.brand%></h3>
+              <div class="content">
+                <div class="title"><%=sneaker.title%></div>
+                <div class="sub">
+                  <h3 class="brand">By <%=sneaker.brand%></h3>
+                  <h3 class="year"><%=sneaker.year%></h3>
+                </div>
+                <div class="description"><p>
+                    <%=sneaker.description%>
+                </p></div>
+                <% if (sneaker.sale_status === 'on-sale') { %>
+                <div class="sale-price">
+                  <h6>$<%=sneaker.listing_price%></h6>
+                </div>
+                <% } %>
+              </div>
+  
+          </a>
+  
+  
+        <% }) %>
         </div>
-        
-        <div>
-          <p><%=sneaker.description%></p>
-        </div>
-
-        <% if (sneaker.sale_status === 'for sale') { %>
-          <div>
-            <span class="forSale">for sale</span>
-          </div>
-        <%  } else { %>
-          <div>
-            <a href="">
-              <span class="putOnSale">sell</span>
-            </a>
-          </div>
-          
-        <% } %>
-          
-      </div>
-
     </div>
-  </a>
-  <% }) %>
-
-  </div>
-
+     
+    </div>

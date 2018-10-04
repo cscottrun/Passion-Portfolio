@@ -8,20 +8,20 @@
   grid-template-columns: 100%;
   grid-template-rows: 180px 20px 90px 90px 90px 90px 100%;  
 /* as an object */
-  grid-area: 2 /1 /-1;
-  background: palevioletred;
+  grid-area: 2 /1 /13;
+  background:lightgray;
   /* padding: 10px; */
   /* height: 100%;
   width: 150px; */
 }
 .avatar-container{
-  background: yellow;
+  border: solid;
+  border-color: white;
   grid-area: 1/1;
   margin: 10px;
   border-radius: 50%;
 }
 .user-menu{
-  background: lightseagreen;
   grid-area: 3 / 1
 }
 .user-menu a{
@@ -32,12 +32,11 @@
   margin: 0;
   padding-top: 20px;
   padding-bottom: 15px;
-  padding-left: 5px;
-  background: darkgrey;
+  padding-left: 20px;
 }
 .user-menu a:hover{
-  background: lightgrey;
-  /* color: black; */
+  background: darkgray;
+  color: white;
 }
 .pic {
   height: 100%;
@@ -46,7 +45,7 @@
 }
 .container{
   height: 500px;
-  background: paleturquoise;
+  /* background: paleturquoise; */
   grid-area: 2 / 2;
   display: grid;
   grid-template-rows: 80px 80%;
@@ -55,7 +54,7 @@
 }
 .graph-container, .items-container{
   grid-area: 2/2/4/3;
-  background: lightgrey;  
+  /* background: lightgrey;   */
 }
 .graph{
   display: block;
@@ -64,7 +63,7 @@
 }
 .container-two{
   /* height: 500px; */
-  background: pink;
+  background: white;
   grid-area: 3 / 2;
   display: grid;
   grid-template-rows: 80px 80%;
@@ -75,4 +74,7 @@
   text-align: center;
   grid-area: 1/2/2/3;
   padding-top: 10px;
+}
+.items-container{
+  padding-top: 20px;
 }
