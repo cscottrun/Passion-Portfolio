@@ -26,7 +26,7 @@ router.post('/users', (req, res, next) => {
         }, '*');
     })
     .then((user) => {
-      res.send(user);
+      res.redirect('/');
     })
     .catch((err) => {
       next(err);
@@ -34,12 +34,9 @@ router.post('/users', (req, res, next) => {
 });
 
 //fake the login process
-router.get('/test', (req,res,next) => {
-  email = req.body.email
-  res.send(email)
-  knex('users')
-  .where('email', email)
-  .then( (user))
+router.post('/logging', (req,res,next) => {
+  console.log(req.body)
+  
 })
 
 //get all users
