@@ -9,4 +9,4 @@
 
    within knexfile.js, set client to 'pg' and connection to your database url
    
-  <img src = "/Users/carriescott/Desktop/passion-portfolio/public/images/Passion-portfolio-video.mov" >
+[![Passion Portfolio vidio](https://www.youtube.com/upload_thumbnail?v=0B5VVJ3iKDg&t=1)](https://youtu.be/0B5VVJ3iKDg)
