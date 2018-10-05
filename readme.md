@@ -1,7 +1,8 @@
-#Passion Portfolio
-###a portfolio manager for collectable sneakers
+# Passion Portfolio
 
-##To use app
+### a portfolio manager for collectable sneakers
+
+## To use app
 * fork and clone this repo
 * npm install dependancies
 * create database in postgress
