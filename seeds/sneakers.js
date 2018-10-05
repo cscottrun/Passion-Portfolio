@@ -18,7 +18,7 @@ exports.seed = function(knex, Promise) {
           "cost": 500,
           "sale_status": "on-sale",
           "listing_price": 550,
-          "description": "beautiful"
+          "description": "So beautiful. that's all I can say."
         },
         {
           "user_id": 2,
@@ -32,11 +32,11 @@ exports.seed = function(knex, Promise) {
           "public": "TRUE",
           "cost": 1230.5,
           "sale_status": "not-on-sale",
-          "listing_price": "666",
+          "listing_price": 1280.5,
           "description": "f you wonder where all the Kanye West sneaker madness started, look no further. Here we have the original Nike Air Yeezy in the \"Zen Grey\" colorway – the first-ever shoe"
         },
         {
-          "user_id": 1,
+          "user_id": 3,
           "brand": "maison margiela",
           "title": "Colorblock Fusion Leather Trainer Sneakers",
           "year": 2018,
@@ -49,21 +49,6 @@ exports.seed = function(knex, Promise) {
           "sale_status": "on-sale",
           "listing_price": 549,
           "description": "the most hip"
-        },
-        {
-          "user_id": 1,
-          "brand": "Adidas",
-          "title": "Human Race",
-          "year": 2018,
-          "condition": 3,
-          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSyxpddY4f9lizCpuiDxiyqI9KBF_YX3iaxF9CJkIkVmDXHO2E5gOWTvzrXOFbyyBrK12ojeov3jwbe9pNht3gusakuF6AV10BYX5RZO3MowKO1GS0__17N&usqp=CAE",
-          "size": 9,
-          "color": "black",
-          "public": "TRUE",
-          "cost": 12500,
-          "sale_status": "on-sale",
-          "listing_price": 12550,
-          "description": "High-top sneaker with grip-tape ankle strap and dollar bill print Leather upper Round toe Adjustable grip-tape strap Leather lining Rubber sole Padded insole Made in Italy. Maison Margiela"
         },
         {
           "user_id": 2,
@@ -92,8 +77,8 @@ exports.seed = function(knex, Promise) {
           "public": "TRUE",
           "cost": 1000,
           "sale_status": "not-on-sale",
-          "listing_price": "777",
-          "description": "these are the greatest shoes in the land. "
+          "listing_price": 1050,
+          "description": "these are the greatest shoes in the land."
         },
         {
           "user_id": 1,
@@ -102,13 +87,73 @@ exports.seed = function(knex, Promise) {
           "year": 2017,
           "condition": 3,
           "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTzvPqRKaGSwdaXAxHNgyZ2dKVPN81f6Yak4tUHWP57qHFRCoPwacV4i26T1ijMXipEs5rk7-EXYVj5oTCIkLebYzXXzdJq&usqp=CAE",
-          "size": 7,
+          "size": 13,
           "color": "green",
           "public": "TRUE",
           "cost": 850,
           "sale_status": "on-sale",
           "listing_price": 900,
           "description": "Showcasing a tonal sole, these comfortable high-tops are embellished at the cap toe and quarter panels with shiny yellow spikes. 1\"\"/25mm midsole (approximately). Spike-embellished cap toe and quarter panels."
+        },
+        {
+          "user_id": 1,
+          "brand": "Fendi",
+          "title": "Logo Print Buckle Strap Sneakers",
+          "year": 2016,
+          "condition": 5,
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT0dxCB9zgOC6lQsjj2pCPLTvws3tZWNrEmSzqjLzj1e1GLVKYfgi5LuEUV2GIxFb7WaSFPCfn3n0T4n7qmOKUqD5zZZpLjBJ_ihxIvjVUxhB347g1e94WhD6E&usqp=CAE",
+          "size": 5,
+          "color": "white",
+          "public": "TRUE",
+          "cost": 650,
+          "sale_status": "on-sale",
+          "listing_price": 700,
+          "description": "Minimalist sneakers, with rubber box sole and maxi buckle. Made of white leather. The band is hand-painted with the iconic FF pattern and decorated with a metal-plated pearl."
+        },
+        {
+          "user_id": 2,
+          "brand": "Rebok",
+          "title": "PW Hu Holi NMD MC Gold/Happy",
+          "year": 2019,
+          "condition": 5,
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTNHQYqdnbVm5_jWXxUzSGrq7SgYrIg4FuUf_UVDubcoYOOBNhOtISDkp9bM1NT72yvwWPhzDO4QEje5vmkMVrUcZ_1YYsaBK9gSllWvI5jZ3y80rEwjWCKUg&usqp=CAE",
+          "size": 13,
+          "color": "pink",
+          "public": "TRUE",
+          "cost": 20000,
+          "sale_status": "on-sale",
+          "listing_price": 20050,
+          "description": "Released in 2018, the four-colorway set took inspiration from the concept of yin and yang. Each sneaker symbolizes one of four natural elements"
+        },
+        {
+          "user_id": 1,
+          "brand": "Nike",
+          "title": "Air Yeezy 'Blink'",
+          "year": 2017,
+          "condition": 4,
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQwu1Y1lKxf8f1mGbITEx15_iNzcP5YrP3N_V7E4NsVhsqXUNV4GD3qFOVIQPxIUl7AtqBDoNhGJXtdUnigUWrjxeNjPxwFg_c5HIn7JTkwumyZFuc2W1Z7hQ&usqp=CAE",
+          "size": 12,
+          "color": "green",
+          "public": "TRUE",
+          "cost": 12000,
+          "sale_status": "on-sale",
+          "listing_price": 12050,
+          "description": "The Air Yeezy ‘Blink’ from April 2009 is one of three sneakers that kicked off Kanye West’s partnership with Nike."
+        },
+        {
+          "user_id": 2,
+          "brand": "Barneys New York",
+          "title": "Balenciaga Men's Triple S Sneakers",
+          "year": 2015,
+          "condition": 5,
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSviLhV4RYiotGV0qrPU5sRcQT7MLG5EUdLOgj0K0t_l3mxA1BtS8JYRu34v3NhdyPWEQgdGzq1aLT-Jt2d7VoSHbzOgGr7&usqp=CAE",
+          "size": 10,
+          "color": "multi",
+          "public": "TRUE",
+          "cost": 800,
+          "sale_status": "on-sale",
+          "listing_price": 850,
+          "description": "Well-worn materials and bold retro appeal define a stylish sneaker with head-turning appeal."
         }
       ]);
     });

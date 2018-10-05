@@ -16,22 +16,22 @@ router.get('/users/:id', (req,res) => {
   })
 })
 
-//edit profile post/patch
-router.post('/users/:id', (req,res) => {
-  console.log(res.body)
-  knex('users')
-  .where('id', req.body.id)
-  .update({
-    email: req.body.email,
-    username: req.body.username,
-    avatar: req.body.avatar
-  },'*')
-  .then(() => {
-    //res.send(user)
-    res.redirect('/users/2')
-  })  
+// //edit profile post/patch
+// router.post('/users/:id', (req,res) => {
+//   console.log(res.body)
+//   knex('users')
+//   .where('id', req.body.id)
+//   .update({
+//     email: req.body.email,
+//     username: req.body.username,
+//     avatar: req.body.avatar
+//   },'*')
+//   .then(() => {
+//     //res.send(user)
+//     res.redirect('/users/2')
+//   })  
   
-})
+// })
 
 //user- edit user profile
 router.get('/users/edit/:id', (req,res) => { 
