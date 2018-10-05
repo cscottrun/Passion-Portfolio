@@ -9,4 +9,4 @@
 
    within knexfile.js, set client to 'pg' and connection to your database url
    
-[![Passion Portfolio vidio](https://www.youtube.com/upload_thumbnail?v=0B5VVJ3iKDg&t=1)](https://youtu.be/0B5VVJ3iKDg)
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
