@@ -8,7 +8,7 @@ router.get('/users/:id', (req,res) => {
   let user_id = req.params.id;
   knex.select('*')
   .from ('sneakers')
-  .leftJoin('users','user_id','users.id')
+  .join('users','user_id','users.id')
   .where('user_id', user_id)
   .then((userSneakers) => {
     //res.send(userSneakers)
