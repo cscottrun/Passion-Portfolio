@@ -9,4 +9,4 @@
 
    within knexfile.js, set client to 'pg' and connection to your database url
    
-[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+[![Watch the video](http://i3.ytimg.com/vi/0B5VVJ3iKDg/hqdefault.jpg)](https://youtu.be/0B5VVJ3iKDg)
