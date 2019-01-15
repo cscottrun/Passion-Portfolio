@@ -10,9 +10,9 @@ Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
 ---
 
-
+<div align="center">
 [![Watch the video](http://i3.ytimg.com/vi/0B5VVJ3iKDg/hqdefault.jpg)](https://youtu.be/0B5VVJ3iKDg)
-
+<div/>
 
 
 ### To Use This App
@@ -24,5 +24,5 @@ Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
 
 
-### Special Thanks To:
+#### Special Thanks To
 * James Jackson Leach who helped me dream up this idea. Hoping he'll buy it from me when we hit $1B market capitalization in 2 years. 
