@@ -16,10 +16,13 @@ Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
 ### To Use This App
 * Fork and clone this repo
-* `npm install`
+* `cd Passion-Portfolio`
 * `createdb passion_port`
+* `npm install`
 * `knex migrate:latest`
 * `knex seed:run`
+* `npm start`
+* open browser to localhost:8000
 
 
 
