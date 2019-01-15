@@ -1,6 +1,6 @@
 # Passion Portfolio
 
-### It all began when … 
+### The Origin Story
 
 It all began when someone told me that the secondary market for Nikes shoes is larger than the primary market of their largest competitor, Sketchers. Although I had some awareness that teenage boys were collecting Air Jordans, I had no idea that there was so much value being traded.
 Being part of the financial markets and cryptocurrency nerd communities, I know how much people like to geek out on the subtle fluxuations of thier portfolio values. Unfortunately for shoe collectors there is no place to track the daily market value of your sneaker portfolio -- until now!
