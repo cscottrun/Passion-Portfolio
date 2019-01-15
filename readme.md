@@ -16,7 +16,13 @@ Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
 
 ### To Use This App
+* Fork and clone this repo
+* `npm install`
+* `createdb *******`
+* `knex migrate:latest`
+* `knex seed:run`
 
 
 
-### Special Thanks Goes To:
+### Special Thanks To:
+* James Jackson Leach who helped me dream up this idea. Hoping he'll buy it from me when we hit $1B market capitalization in 2 years. 
