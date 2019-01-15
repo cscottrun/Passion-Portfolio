@@ -33,12 +33,6 @@ router.post('/users', (req, res, next) => {
     });
 });
 
-//fake the login process
-router.post('/logging', (req,res,next) => {
-  console.log(req.body)
-  
-})
-
 //get all users
 router.get('/users', (req,res,next)  => {
   knex.select('username', 'id')

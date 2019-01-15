@@ -12,14 +12,8 @@ router.get('/', (req,res) => {
 router.get('/marketplace', (req,res) => {
   knex.select().from('sneakers')
   .then((sneakers) => {
-    res.send(sneakers)
-    //res.render('marketplace', {sneakers:sneakers})
+    res.render('marketplace', {sneakers:sneakers})
   })
-})
-
-//testing form submission
-router.post('/test', (req,res) => {
-  res.send(req.body)
 })
 
 
