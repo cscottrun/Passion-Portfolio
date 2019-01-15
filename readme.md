@@ -10,7 +10,7 @@ Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
 ---
 
-->[![Watch the video](http://i3.ytimg.com/vi/0B5VVJ3iKDg/hqdefault.jpg)](https://youtu.be/0B5VVJ3iKDg)<-
+[![Watch the video](http://i3.ytimg.com/vi/0B5VVJ3iKDg/hqdefault.jpg)](https://youtu.be/0B5VVJ3iKDg)
 
 
 
