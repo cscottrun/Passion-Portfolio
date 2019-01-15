@@ -26,6 +26,6 @@ app.use(itemsPages);
 
 
 app.listen(PORT, () => {
-  console.log('Welcome to the port of passions')
+  console.log('Welcome to port', PORT)
 })
 

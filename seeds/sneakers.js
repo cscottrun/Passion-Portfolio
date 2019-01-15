@@ -33,7 +33,7 @@ exports.seed = function(knex, Promise) {
           "cost": 1230.5,
           "sale_status": "not-on-sale",
           "listing_price": 1280.5,
-          "description": "f you wonder where all the Kanye West sneaker madness started, look no further. Here we have the original Nike Air Yeezy in the \"Zen Grey\" colorway – the first-ever shoe"
+          "description": "if you wonder where all the Kanye West sneaker madness started?"
         },
         {
           "user_id": 3,
@@ -93,7 +93,7 @@ exports.seed = function(knex, Promise) {
           "cost": 850,
           "sale_status": "on-sale",
           "listing_price": 900,
-          "description": "Showcasing a tonal sole, these comfortable high-tops are embellished at the cap toe and quarter panels with shiny yellow spikes. 1\"\"/25mm midsole (approximately). Spike-embellished cap toe and quarter panels."
+          "description": "Showcasing a tonal sole, these comfortable high-tops are embellished at the cap toe and quarter panels with shiny yellow spikes."
         },
         {
           "user_id": 1,
