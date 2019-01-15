@@ -10,9 +10,9 @@ Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
 ---
 
-<div align="center">
+
 (http://i3.ytimg.com/vi/0B5VVJ3iKDg/hqdefault.jpg)](https://youtu.be/0B5VVJ3iKDg)
-</div>
+
 
 
 ### To Use This App
