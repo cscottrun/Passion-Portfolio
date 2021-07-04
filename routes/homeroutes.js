@@ -10,17 +10,10 @@ router.get('/', (req,res) => {
 
 //marketplace
 router.get('/marketplace', (req,res) => {
-  knex('sneakers')
-  .where('sale_status', 'on-sale')
+  knex.select().from('sneakers')
   .then((sneakers) => {
-    //res.send(sneakers)
     res.render('marketplace', {sneakers:sneakers})
   })
-})
-
-//testing form submission
-router.post('/test', (req,res) => {
-  res.send(req.body)
 })
 
 

@@ -3,8 +3,6 @@ const router = express.Router();
 const knex = require ('../knex')
 const path = require ('path')
 
-
-
 //item profile
 router.get('/items/:id', (req,res) => {
   knex('sneakers')

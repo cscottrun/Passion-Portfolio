@@ -1,3 +1,4 @@
+
 # Passion Portfolio
 
 ### The Origin Story
@@ -7,8 +8,6 @@ Being part of the financial markets and cryptocurrency nerd communities, I know 
 Users create an account and provide detials on their collections. The site uses this data, searches Ebay APIs and returns an average daily market value for the item. Users can track the value of their total portfolio, see which assets are providing the greatest return on investment and even trade on the site.
 Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
-
----
 
 [![Watch the video](http://i3.ytimg.com/vi/0B5VVJ3iKDg/hqdefault.jpg)](https://youtu.be/0B5VVJ3iKDg)
 
@@ -28,3 +27,4 @@ Finally, Passion Portfolio brings financial analytics to sneaker nerds.
 
 #### Special Thanks To
 * James Jackson Leach who helped me dream up this idea. Hoping he'll buy it from me when we hit $1B market capitalization in 2 years. 
+
